@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Shopping Cart</title>
+<link href="main.css" rel="stylesheet" type="text/css">
+<link href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|K2D" rel="stylesheet">
+<link rel="icon" href="images/favicon.ico">
+</head>
+
+<body>
+<section class="bg"> 
+	<img alt="mountain" class="bg-fixed" src="images/bg.png">
+	<img alt="bg-element1" class="bg-elt" id="bg-elt-1" src="images/1.png">
+	<img alt="bg-element2" class="bg-elt" id="bg-elt-2" src="images/2.png">
+	<img alt="bg-element3" class="bg-elt" id="bg-elt-3" src="images/3.png">
+	<img alt="bg-element4" class="bg-elt" id="bg-elt-4" src="images/4.png">
+	<img alt="bg-element5" class="bg-elt" id="bg-elt-5" src="images/5.png">
+</section>
+<main>
+	<section class="cart" id="cart">		
+		<div class="total" id="total">
+			<span class="ttl-price"><i class="fa fa-dollar-sign"></i>Total price:&nbsp;<input readonly class="price" value="0" id="ttl-price"></span>
+		</div>
+		<div class="item" id="item1">
+			<a href="#" id="del1"><i id="del1" class="fa fa-times"></i></a>
+			<a href="#" id="like1"><i id="like1" class="fa fa-heart"></i></a>
+			<img src="images/1.jpg" alt="item 1" class="items-img">
+			<div class="items-description" id="description1">
+				<span class="name">Jordan Air</span>
+				<span class="color">Black</span>
+			</div>
+			<div class="button-group">
+				<input class="subtotal" id="sub1" type="text" value="0">
+				<button class="plus" id="plus1" type="button"><i class="fa fa-plus"></i></button>
+				<input class="count" id="count1" type="text" value="0">
+				<button class="minus" type="button" id="minus1"><i class="fa fa-minus"></i></button>
+			</div>
+			<span class="price" id="price1">$125</span>
+		</div>
+		<div class="item" id="item2">
+			<a href="#" id="del2"><i id="del2" class="fa fa-times"></i></a>
+			<a href="#" id="like2"><i id="like2" class="fa fa-heart"></i></a>
+			<img src="images/2.jpg" alt="item 2" class="items-img">
+			<div class="items-description" id="description2">
+				<span class="name">Adidas</span>
+				<span class="color">White</span>
+			</div>
+			<div class="button-group">
+				<input class="subtotal" id="sub2" type="text" value="0">
+				<button class="plus" id="plus2" type="button"><i class="fa fa-plus"></i></button>
+				<input class="count" id="count2" type="text" value="0">
+				<button class="minus" type="button" id="minus2"><i class="fa fa-minus"></i></button>
+			</div>
+			<span class="price" title="$100" id="price2">$100</span>
+		</div>
+		<div class="item" id="item3">
+			<a href="#" id="del3"><i id="del3" class="fa fa-times"></i></a>
+			<a href="#" id="like3"><i id="like3" class="fa fa-heart"></i></a>
+			<img src="images/3.jpg" alt="item 3" class="items-img">
+			<div class="items-description" id="description3">
+				<span class="name">Nike Air</span>
+				<span class="color">Black</span>
+			</div>
+			<div class="button-group">
+				<input class="subtotal" id="sub3" type="text" value="0">
+				<button class="plus" id="plus3" type="button"><i class="fa fa-plus"></i></button>
+				<input class="count" id="count3" type="text" value="0">
+				<button class="minus" type="button" id="minus3"><i class="fa fa-minus"></i></button>
+			</div>
+			<span class="price" id="price3">$221</span>
+		</div>
+		<div class="item" id="item4">
+			<a href="#" id="del4"><i id="del4" class="fa fa-times"></i></a>
+			<a href="#" id="like4"><i id="like4" class="fa fa-heart"></i></a>
+			<img src="images/4.jpg" alt="item 4" class="items-img">
+			<div class="items-description" id="description4">
+				<span class="name">Nike</span>
+				<span class="color">Grey</span>
+			</div>
+			<div class="button-group">
+				<input class="subtotal" id="sub4" type="text" value="0">
+				<button class="plus" id="plus4" type="button"><i class="fa fa-plus"></i></button>
+				<input class="count" id="count4" type="text" value="0">
+				<button class="minus" type="button" id="minus4"><i class="fa fa-minus"></i></button>
+			</div>
+			<span class="price" id="price4">$1250</span>
+		</div>
+		<div id="buttons">
+			<button type="button" id="show-new">Show more items</button>
+			<button type="button" id="restore-del">Restore deleted items</button>
+		</div>
+		<div class="item" id="item5">
+			<a href="#" id="del5"><i id="del5" class="fa fa-times"></i></a>
+			<a href="#" id="like5"><i id="like5" class="fa fa-heart"></i></a>
+			<img src="images/5.jpg" alt="item 5" class="items-img">
+			<div class="items-description" id="description5">
+				<span class="name">Converse</span>
+				<span class="color">Cream</span>
+			</div>
+			<div class="button-group">
+				<input class="subtotal" id="sub5" type="text" value="0">
+				<button class="plus" id="plus5" type="button"><i class="fa fa-plus"></i></button>
+				<input class="count" id="count5" type="text" value="0">
+				<button class="minus" type="button" id="minus5"><i class="fa fa-minus"></i></button>
+			</div>
+			<span class="price" id="price5">$73</span>
+		</div>
+		<div class="item" id="item6">
+			<a href="#" id="del6"><i id="del6" class="fa fa-times"></i></a>
+			<a href="#" id="like6"><i id="like6" class="fa fa-heart"></i></a>
+			<img src="images/6.jpg" alt="item 6" class="items-img">
+			<div class="items-description" id="description6">
+				<span class="name">LED Sneakers</span>
+				<span class="color">Black</span>
+			</div>
+			<div class="button-group">
+				<input class="subtotal" id="sub6" type="text" value="0">
+				<button class="plus" id="plus6" type="button"><i class="fa fa-plus"></i></button>
+				<input class="count" id="count6" type="text" value="0">
+				<button class="minus" type="button" id="minus6"><i class="fa fa-minus"></i></button>
+			</div>
+			<span class="price" id="price6">$87</span>
+		</div>
+		<div class="item" id="item7">
+			<a href="#" id="del7"><i id="del7" class="fa fa-times"></i></a>
+			<a href="#" id="like7"><i id="like7" class="fa fa-heart"></i></a>
+			<img src="images/8.jpg" alt="item 7" class="items-img">
+			<div class="items-description" id="description7">
+				<span class="name">Underarmor</span>
+				<span class="color">Black</span>
+			</div>
+			<div class="button-group">
+				<input class="subtotal" id="sub7" type="text" value="0">
+				<button class="plus" id="plus7" type="button"><i class="fa fa-plus"></i></button>
+				<input class="count" id="count7" type="text" value="0">
+				<button class="minus" type="button" id="minus7"><i class="fa fa-minus"></i></button>
+			</div>
+			<span class="price" id="price7">$279</span>
+		</div>
+		<button type="button" id="hide-new">Hide new items</button>
+	</section>
+</main>
+<script src="main.js" type="text/jscript"></script>
+</body>
+</html>
